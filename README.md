@@ -1,5 +1,5 @@
-# unsplash-api-demo
-En demo i hur man kan använda Unsplash API
+# UNSPLASH API DEMO
+En liten demo i hur man kan använda sig av Unsplash API
 
 ## Dagens övning:
 * Skapa funktionalitet för att ändra på hur många resultat per API-anrop man får ```&per_page=2```

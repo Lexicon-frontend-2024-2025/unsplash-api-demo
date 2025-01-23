@@ -67,6 +67,10 @@ nextPageBtn.addEventListener("click", () => {
     // ta med senaste queryn som är lagrad i latestQuery i samband med senaste hämtningen
     fetchImages(latestQuery, imageCount);
     pageCountEl.innerHTML = `Sida ${page}`;
+    // visa prev-knappen om man är på sida 2
+    if (page === 2) {
+        prevPageBtn.classList.toggle("disabled");
+    }
 });
 
 prevPageBtn.addEventListener("click", () => {
@@ -79,6 +83,10 @@ prevPageBtn.addEventListener("click", () => {
         // ta med senaste queryn som är lagrad i latestQuery i samband med senaste hämtningen
         fetchImages(latestQuery, imageCount);
         pageCountEl.innerHTML = `Sida ${page}`;
+        // dölj prev-knappen om man är på sida 1
+        if (page === 1) {
+            prevPageBtn.classList.toggle("disabled");
+        }
     } else {
         console.log('kan inte backa mer');
     }
